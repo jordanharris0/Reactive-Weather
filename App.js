@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 // Import data and WeatherCard here
 import WeatherCard from "./components/WeatherCard";
 import cities from "./data.js";
+import Location from "./components/Location";
 
 function App() {
+  const [location, setLocation] = useState("New York");
   return (
     <>
       <h1 className="title">REACTIVE WEATHER</h1>
@@ -12,6 +14,7 @@ function App() {
         {cities.map((city, index) => (
           <WeatherCard key={index} city={city} />
         ))}
+        <Location data={cities} location={location} setLocation={setLocation} />
       </div>
     </>
   );
