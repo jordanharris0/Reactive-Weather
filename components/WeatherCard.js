@@ -24,7 +24,7 @@ function WeatherCard({ city }) {
         />
       </div>
       <div className="card-body">
-        <h3 className="card-title">{city.name}</h3>
+        <h3 className="card-title">{city.city}</h3>
         <h5 className="card-text">{city.temperature}</h5>
         <h5 className="card-text">{city.forecast}</h5>
       </div>
