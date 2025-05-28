@@ -1,5 +1,8 @@
 import React from "react";
-import sunny from "../assets/Sunny.svg";
+import sunny from "url:../assets/Sunny.svg";
+import rainy from "url:../assets/Rainy.svg";
+import cloudy from "url:../assets/Cloudy.svg";
+import partlyCloudy from "url:../assets/PartlyCloudy.svg";
 
 function Location({ data, location, setLocation }) {
   const cityData = data.find((city) => city.city === location);
