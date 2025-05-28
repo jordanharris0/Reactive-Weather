@@ -7,7 +7,7 @@ import partlyCloudy from "url:../assets/PartlyCloudy.svg";
 function Location({ data, location, setLocation }) {
   const cityData = data.find((city) => city.city === location);
 
-  if (!cityData) return null;
+  if (!cityData) return "Location not found";
 
   const icon =
     cityData.forecast === "Sunny"
